@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+body {
+  font-family: 'Pacifico', cursive;
+}
+
+.books-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.books-section, .must-try-books-section, .tamil-story-books-section {
+  margin: 20px 0;
+}
+
+.book {
+  margin: 10px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.book img {
+  width: 500px;
+  height: 500px;
+  border-radius: 15px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.book:hover img {
+  transform: scale(1.1);
+}
+
+.book p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+  text-align: left;
+  padding-left: 10px;
+  transition: text-decoration 0.3s;
+}
+
+.book:hover p {
+  text-decoration: underline;
+}
+
+.special-book img.special-image {
+  width: 100%;
+  height: 300px;
+  border: 2px solid #ff6347;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.special-book:hover .special-image {
+  transform: scale(1.1);
+}

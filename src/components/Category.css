@@ -1,0 +1,43 @@
+.category-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .books-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .book-item {
+    background-color: #f0f0f0;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden; /* Ensure that the zoom effect doesn't overflow the container */
+  }
+  
+  .book-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover; /* Ensure the image covers the entire area without distortion */
+    margin-bottom: 10px; /* Add some space between the image and the title */
+    transition: transform 0.3s ease; /* Smooth transition for the zoom effect */
+  }
+  
+  .book-item img:hover {
+    transform: scale(1.1); /* Zoom the image on hover */
+  }
+  
+  .book-item h3 {
+    margin-top: 0;
+  }
+  
+  .book-item p {
+    margin-bottom: 0;
+  }
+  

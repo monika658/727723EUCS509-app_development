@@ -1,0 +1,99 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f861bc; /* Bright and cheerful color */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Space between logo and navigation links */
+}
+
+.navbar-logo {
+    height: 80px; /* Adjust the height to fit the navbar */
+    width: 80px; /* Maintain aspect ratio */
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+.navbar-title {
+    font-size: 28px; /* Slightly larger font */
+    color: #fff;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Playful font */
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Allow links to take available space */
+    justify-content: space-between; /* Distribute space between links */
+}
+
+.navbar-link {
+    margin: 0 10px; /* Adjust margin for spacing */
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px; /* Slightly larger font */
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Playful font */
+    transition: color 0.3s;
+    padding: 10px; /* Larger clickable area */
+    border-radius: 5px;
+}
+
+.navbar-link:hover {
+    color: #ff00ae;
+    background-color: #fd7aff; /* Highlight background on hover */
+}
+
+.navbar-dropdown {
+    position: relative;
+}
+
+.navbar-dropdown button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 20px; /* Slightly larger font */
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Playful font */
+    cursor: pointer;
+    padding: 10px; /* Larger clickable area */
+    transition: color 0.3s;
+    border-radius: 5px;
+}
+
+.navbar-dropdown button:hover {
+    color: #ff00ae;
+    background-color: #fd7aff; /* Highlight background on hover */
+}
+
+.navbar-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 160px;
+    border-radius: 4px;
+    top: 100%;
+    left: 0;
+}
+
+.navbar-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
