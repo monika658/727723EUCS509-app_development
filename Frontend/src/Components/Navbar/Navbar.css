@@ -1,0 +1,142 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f861bc; /* Navbar background color */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure the navbar is the reference for absolute positioning */
+}
+
+/* Logo Container */
+.navbar-logo-container {
+    display: flex;
+    align-items: center;
+    margin-right: 20px; /* Space between logo and navigation links */
+}
+
+.navbar-logo {
+    height: 80px; /* Adjust the height to fit the navbar */
+    width: 80px; /* Maintain aspect ratio */
+    margin-right: 10px;
+    border-radius: 25px;
+}
+
+.navbar-title {
+    font-size: 28px; /* Slightly larger font */
+    color: #fff;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Playful font */
+}
+/* Links Container */
+.navbar-links-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-links {
+    display: flex;
+    align-items: center;
+    position: relative; /* Ensure this is the reference for absolute positioning of the dropdown */
+}
+
+/* Navbar Links */
+/* Navbar Links */
+.navbar-link {
+    margin: 0 10px; /* Adjust margin for spacing */
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px; /* Slightly larger font */
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive; /* Playful font */
+    transition: color 0.3s, background-color 0.3s; /* Added background-color transition */
+    padding: 10px 20px; /* Larger clickable area, ensures uniform padding */
+    border-radius: 5px;
+}
+
+.navbar-link:hover {
+    color: #ff00ae;
+    background-color: #fd7aff; /* Highlight background on hover */
+}
+
+/* Style for the Dropdown Button */
+.navbar-dropdown button {
+    background: none; /* Remove default background */
+    border: none; /* Remove default border */
+    color: #fff; /* Match link color */
+    font-size: 20px; /* Match link font size with others */
+    cursor: pointer; /* Pointer cursor to indicate it’s clickable */
+    padding: 10px 20px; /* Ensure uniform padding with other links */
+    margin: 0 10px; /* Adjust margin to match other links */
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s; /* Added background-color transition */
+    display: flex; /* Ensure button aligns with other links */
+    align-items: center; /* Center align items vertically */
+}
+
+.navbar-dropdown button:hover {
+    color: #ff00ae;
+    background-color: #fd7aff; /* Highlight background on hover */
+}
+
+
+
+
+.navbar-dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6e4e4; /* Dropdown background color */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 130px; /* Adjust width to fit content */
+    border-radius: 4px; /* Optional: adds rounded corners */
+    top: 100%; /* Positions the dropdown just below the button */
+    left: 0; /* Aligns dropdown to the left edge of the button */
+    margin-top: 10px; /* Adds space between the button and the dropdown */
+}
+
+.navbar-dropdown .dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #333; /* Text color inside dropdown */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+/* Auth Links Container */
+.navbar-auth-links {
+    display: flex;
+    align-items: center;
+}
+
+/* Profile Icon Styling */
+.profile-link {
+    display: flex;
+    align-items: center;
+}
+
+.profile-icon {
+    height: 14px;
+    width: 24px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center; /* Ensure profile icon aligns properly */
+}
+
+/* Specific Styling for Logout Button */
+.logout-button {
+    background: none; /* Ensure no background */
+    border: none; /* Remove any border */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Ensure all buttons align in the same row */
+    align-items: center; /* Center align items vertically */
+}

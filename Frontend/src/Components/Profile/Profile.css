@@ -1,0 +1,132 @@
+/* Profile Page Container */
+.profile-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f0f2f5;
+}
+
+/* Profile Header */
+.profile-header {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Profile Header Left */
+.profile-header-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Profile Picture */
+.profile-picture {
+  text-align: center;
+}
+
+.profile-picture img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* Edit Profile Button */
+.edit-profile-btn {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.edit-profile-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Profile Header Right */
+.profile-header-right {
+  flex: 2;
+  padding-left: 20px;
+}
+
+/* Profile Info */
+.profile-info {
+  font-size: 16px;
+  color: #333;
+}
+
+.profile-info p {
+  margin-bottom: 10px;
+}
+
+/* Form Styles */
+.profile-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  width: 150px;
+  font-weight: bold;
+  color: #555;
+  margin-right: 10px;
+}
+
+.form-group input,
+.form-group select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #aaa;
+  outline: none;
+}
+
+.submit-button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.success-message {
+  color: green;
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+

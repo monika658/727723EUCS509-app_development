@@ -1,0 +1,75 @@
+.typewriter {
+    font-family: 'Dancing Script', cursive;
+    overflow: hidden;
+    border-right: .15em solid #ff00c3;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ff00c3; }
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    animation: backgroundToggle 9s infinite;
+    padding: 20px;
+    cursor: url("D:\App_Fable\App_Fable\book\public\Books\Unleash-Your-Childs-Imagination.png.png"), auto; /* Custom star cursor */
+}
+
+.testimonials {
+    position: absolute;
+    left: 5%;
+    top: 30%; /* Moved down by adjusting the top value */
+    max-width: 300px;
+    font-size: 1.2rem;
+    color: #ff00c3;
+}
+
+.testimonials blockquote {
+    margin: 0;
+    padding: 0;
+    animation: fadeInWords 4s infinite;
+}
+
+.testimonials p {
+    margin-top: 5px;
+    font-style: italic;
+}
+
+@keyframes fadeInWords {
+    0% { opacity: 0; transform: translateY(20px); }
+    50% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(-20px); }
+}
+
+@keyframes backgroundToggle {
+    0% { background-image: url("D:/App_Fable/App_Fable/book/public/Books/Empower-Your-Childs-Imagination.png.webp"); }
+    33% { background-image: url("D:/App_Fable/App_Fable/book/public/Books/Discover-the-Magic-of-Reading.png.webp"); }
+    100% { background-image: url("C:/Users/monik/OneDrive/Desktop/lo/Empower-Your-Childs-Imagination.png.webp"); }
+}
+
+.home-content {
+    text-align: center;
+    color: black;
+    margin-top: -570px;
+}
+
+.cta-button:hover {
+    cursor: url("D:\App_Fable\App_Fable\book\public\Books\Unleash-Your-Childs-Imagination.png.png"), auto; /* Different cursor on hover */
+}
